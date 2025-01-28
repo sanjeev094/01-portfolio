@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio website showcasing my projects and skills.">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+    <header class="bg-gray-800 text-white p-4 sticky top-0 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">My Portfolio</a>
+            <ul class="flex space-x-4">
+                <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                <li><a href="#skills" class="hover:text-gray-300">Skills</a></li>
+                <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
+                <li><a href="#testimonials" class="hover:text-gray-300">Testimonials</a></li>
+                <li><a href="#blog" class="hover:text-gray-300">Blog</a></li>
+                <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero"
+            class="h-screen bg-gradient-to-r from-blue-500 to-purple-600 text-white flex items-center justify-center text-center fade-in">
+            <div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to My Portfolio</h1>
+                <p class="text-lg md:text-xl mb-6">Showcasing my work, skills, and passion for development.</p>
+                <a href="#projects" class="bg-white text-blue-600 px-6 py-2 rounded-lg hover:bg-gray-200">View
+                    Projects</a>
+            </div>
+        </section>
+
+        <section id="about" class="container mx-auto my-16 p-4">
+            <h2 class="text-3xl font-bold mb-4 text-center">About Me</h2>
+            <p class="text-lg leading-relaxed">I am a dedicated problem solver with a passion for coding and continuous
+                learning. As a Computer Science student, I strive to develop efficient solutions that tackle
+                real-world challenges. My curiosity drives me to explore various technologies, from data structures and
+                algorithms to
+                backend development, with the goal of creating impactful, scalable applications.</p>
+        </section>
+
+        <section id="skills" class="bg-gray-100 py-16">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Skills</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div>
+                        <h3 class="text-xl font-semibold">Frontend Development</h3>
+                        <p class="text-gray-600">HTML, CSS, JavaScript, React</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold">Backend Development</h3>
+                        <p class="text-gray-600">Node.js, Express, Python, Java, MongoDB</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold">Tools & Frameworks</h3>
+                        <p class="text-gray-600">VSCode, Git, Github, Tailwind CSS, Docker</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container mx-auto my-16 p-4">
+            <h2 class="text-3xl font-bold mb-4 text-center">Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div
+                    class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+                    <img src="./images/work-1.png" alt="Project 1 screenshot" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Mobile App for Task Management</h3>
+                        <p class="text-gray-600">A cross-platform mobile application designed to help users manage their
+                            daily tasks efficiently. It includes features like task categorization, reminders, and
+                            progress
+                            tracking. Built with Flutter, ensuring a consistent experience on both Android and iOS.</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+                    <img src="./images/work-2.png" alt="Project 1 screenshot" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Social Media Application</h3>
+                        <p class="text-gray-600">A vibrant social media platform designed to connect users with shared
+                            interests.
+                            Features include real-time chat, post creation with image support, and a personalized feed
+                            algorithm.
+                            Developed using React Native and Firebase for a scalable backend.</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+                    <img src="./images/work-3.png" alt="Project 1 screenshot" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">E-Commerce Website</h3>
+                        <p class="text-gray-600">An online store offering a seamless shopping experience. Includes user
+                            authentication, advanced product search,
+                            a secure payment gateway, and a responsive design.
+                            Built using HTML, CSS, JavaScript, and powered by Node.js and MongoDB.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="bg-gray-800 text-white py-16">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Testimonials</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <blockquote class="p-4 bg-gray-700 rounded-lg shadow">
+                        <p>"Amazing developer! Delivered on time and exceeded expectations."</p>
+                        <cite>- Client A</cite>
+                    </blockquote>
+                    <blockquote class="p-4 bg-gray-700 rounded-lg shadow">
+                        <p>"Fantastic to work with, very skilled and professional."</p>
+                        <cite>- Client B</cite>
+                    </blockquote>
+                    <blockquote class="p-4 bg-gray-700 rounded-lg shadow">
+                        <p>"Highly recommend! The work was done with great attention to detail."</p>
+                        <cite>- Client C</cite>
+                    </blockquote>
+                    <blockquote class="p-4 bg-gray-700 rounded-lg shadow">
+                        <p>"Excellent communication and problem-solving skills. A pleasure to work with!"</p>
+                        <cite>- Client D</cite>
+                    </blockquote>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="container mx-auto my-16 p-4">
+            <h2 class="text-3xl font-bold mb-4 text-center">Blog</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <article class="border border-gray-600 rounded-lg p-10 bg-gray-200">
+                    <h3 class="text-xl font-semibold">Post Title 1</h3>
+                    <p class="text-gray-600">A short excerpt from the blog post...</p>
+                </article>
+                <article class="border border-gray-600 rounded-lg p-10 bg-gray-200">
+                    <h3 class="text-xl font-semibold">Post Title 2</h3>
+                    <p class="text-gray-600">A short excerpt from the blog post...</p>
+                </article>
+                <article class="border border-gray-600 rounded-lg p-10 bg-gray-200">
+                    <h3 class="text-xl font-semibold">Post Title 3</h3>
+                    <p class="text-gray-600">A short excerpt from the blog post...</p>
+                </article>
+                <article class="border border-gray-600 rounded-lg p-10 bg-gray-200">
+                    <h3 class="text-xl font-semibold">Post Title 4</h3>
+                    <p class="text-gray-600">A short excerpt from the blog post...</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact" class="bg-gray-800 text-white py-16">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+                <p class="text-lg mb-6">Have a question or want to work together? Reach out!</p>
+                <form action="https://api.web3forms.com/submit" method="POST" class="max-w-md mx-auto">
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="97ecc406-4654-47cd-8955-77b5aabb1658">
+                    <div class="mb-4">
+                        <label for="name" class="block text-sm font-medium">Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full p-2 border text-gray-800 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-sm font-medium">Message</label>
+                        <textarea id="message" name="message" rows="4" required
+                            class="w-full p-2 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Send
+                        Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 text-center py-4">
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
